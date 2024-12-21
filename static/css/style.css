@@ -9,9 +9,6 @@ body{
     gap: 25px;
     color: white;
 }
-.tomaTodoLogo {
-	width: 215px;
-}
 
 .phone{ 
 	background: linear-gradient(to top, rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('C:/Users/bertn/OneDrive/Desktop/Coding_Dojo_Folder/Personal Practice/Toma_Todo_Simple/static/img/cellphone.png') no-repeat center center/cover;
@@ -38,4 +35,21 @@ body{
 .playAgainBtn {
 	width: 250px;
     padding-top: 60px;
+}
+
+@keyframes rotate {
+    from {
+    transform: rotate(0deg);
+    }
+    to { 
+    transform: rotate(360deg);
+    }
+}
+
+.tomaTodoLogo {
+    width: 215px;
+    animation-name:            rotate; 
+    animation-duration:        .75s; 
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
 }
