@@ -5,6 +5,14 @@ function spinTop() {
   LogoElement = document.getElementById("tomaTodoLogo");
   if (LogoElement != null) LogoElement.remove();
 
+  const topElement = document.getElementById("spinBtn");
+  topElement.classList.add("tomaTodoLogo");
+
+  // Remove the class after a specified duration
+  setTimeout(() => {
+    topElement.classList.remove("tomaTodoLogo");
+  }, 2000);
+
   faceNum = Math.floor(Math.random() * 6);
   if (faceNum == 0) {
     image.src = "static/img/pon_uno.jpg";
