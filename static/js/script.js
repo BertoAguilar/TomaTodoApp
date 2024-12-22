@@ -62,7 +62,7 @@ function spinTop() {
   if (faceNum == 5) {
     image.src = "static/img/toma_todo.jpg";
     image.alt = "Toma Todo Img";
-    image.className = "topImg";
+    image.className = "winnerTopImg";
     var inputImg = document.getElementById("topImg");
     inputImg.appendChild(image);
     const ButtonElement = document.getElementById("spinBtn");
